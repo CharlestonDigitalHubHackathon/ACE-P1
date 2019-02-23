@@ -18,6 +18,12 @@ body {
     width: 250px;
 }
 
+.tiny-card {
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+}
+
 /*
                     Header
                     */
