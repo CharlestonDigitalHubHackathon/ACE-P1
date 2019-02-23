@@ -458,7 +458,52 @@ function app(state, actions, view, container) {
     return element;
   }
 }
-},{}],"js/data/plant.json":[function(require,module,exports) {
+},{}],"js/data/BadTypes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = "Hydro,Gas,Other,Oil,Nuclear,Coal,Waste,\
+Biomass,Geothermal,NA,Cogeneration,Storage,Petcoke".split(',');
+
+exports.default = _default;
+},{}],"js/views/thumbView.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _hyperapp = require("hyperapp");
+
+var _BadTypes = _interopRequireDefault(require("../data/BadTypes"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = function _default(item) {
+  return (0, _hyperapp.h)("div", {
+    class: 'card ' + (_BadTypes.default.indexOf(item.fuel1) == -1 ? 'good' : 'bad')
+  }, (0, _hyperapp.h)("div", {
+    class: "card-header"
+  }, (0, _hyperapp.h)("div", {
+    class: "country-image"
+  }, (0, _hyperapp.h)("img", {
+    src: "images/country/usa.png"
+  })), (0, _hyperapp.h)("div", {
+    class: "card-title"
+  }, (0, _hyperapp.h)("div", {
+    class: "card-maintitle"
+  }, item.name), (0, _hyperapp.h)("div", {
+    class: "card-subtitle"
+  }, item.country_long))));
+};
+
+exports.default = _default;
+},{"hyperapp":"../node_modules/hyperapp/src/index.js","../data/BadTypes":"js/data/BadTypes.js"}],"js/data/plant.json":[function(require,module,exports) {
 module.exports = [{
   "Region": null,
   "income_group": null,
@@ -5905,12 +5950,16 @@ module.exports = [{
 
 var _hyperapp = require("hyperapp");
 
+var _BadTypes = _interopRequireDefault(require("./data/BadTypes"));
+
+var _thumbView = _interopRequireDefault(require("./views/thumbView"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var Plants = require("./data/plant.json");
 /** @jsx h */
 
 
-var BadTypes = "Hydro,Gas,Other,Oil,Nuclear,Coal,Waste,\
-Biomass,Geothermal,NA,Cogeneration,Storage,Petcoke".split(',');
 var state = {
   plants: Plants,
   count: 0
@@ -5932,127 +5981,18 @@ var actions = {
   }
 };
 
-var thumbView = function thumbView(item) {
-  return (0, _hyperapp.h)("div", {
-    class: 'card ' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')
-  }, (0, _hyperapp.h)("div", {
-    class: "card-header"
-  }, (0, _hyperapp.h)("div", {
-    class: "country-image"
-  }, (0, _hyperapp.h)("img", {
-    src: "images/country/usa.png"
-  })), (0, _hyperapp.h)("div", {
-    class: "card-title"
-  }, (0, _hyperapp.h)("div", {
-    class: "card-maintitle"
-  }, item.name), (0, _hyperapp.h)("div", {
-    class: "card-subtitle"
-  }, item.country_long))));
-};
-
-var detailView = function detailView(item) {
-  return (0, _hyperapp.h)("div", {
-    class: "card"
-  }, (0, _hyperapp.h)("div", {
-    class: "card-header"
-  }, (0, _hyperapp.h)("div", {
-    class: "country-image"
-  }, (0, _hyperapp.h)("img", {
-    src: "images/country/usa.png"
-  })), (0, _hyperapp.h)("div", {
-    class: "card-title"
-  }, (0, _hyperapp.h)("div", {
-    class: "card-maintitle"
-  }, item.name), (0, _hyperapp.h)("div", {
-    class: "card-subtitle"
-  }, item.country_long))), (0, _hyperapp.h)("div", {
-    class: 'card-content content-' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')
-  }, (0, _hyperapp.h)("div", {
-    class: "card-year"
-  }, "2016"), (0, _hyperapp.h)("div", {
-    class: "card-icon"
-  }, (0, _hyperapp.h)("img", {
-    src: 'images/type/' + item.fuel1 + '.png'
-  }))), (0, _hyperapp.h)("div", {
-    class: "card-footer"
-  }, (0, _hyperapp.h)("div", {
-    class: "footer-label"
-  }, "578 gwh generated"), (0, _hyperapp.h)("div", {
-    class: "generation-viz"
-  }, (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-on"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }), (0, _hyperapp.h)("div", {
-    class: "unit-off"
-  }))));
-};
-
 var view = function view(state, actions) {
   return (0, _hyperapp.h)("div", {
     class: "row grid-layout tiny four-column"
   }, state.plants.map(function (plant, i) {
-    return thumbView(plant);
+    return (0, _thumbView.default)(plant);
   }));
 };
 
+window.Plants = Plants;
 console.log(Plants);
 (0, _hyperapp.app)(state, actions, view, document.querySelector("#ace-app"));
-},{"hyperapp":"../node_modules/hyperapp/src/index.js","./data/plant.json":"js/data/plant.json"}],"../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"hyperapp":"../node_modules/hyperapp/src/index.js","./data/BadTypes":"js/data/BadTypes.js","./views/thumbView":"js/views/thumbView.js","./data/plant.json":"js/data/plant.json"}],"../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -6079,7 +6019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56071" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63627" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
