@@ -7,6 +7,24 @@ var Plants = require("./data/plant.json");
 
 /** @jsx h */
 
+function parseArray(data, filterName){
+    var Collection = {};
+    data.reduce(function (newarr, plt, i) {
+        var results = {};
+        if (plt.Region !== null) {
+            var group_name = plt[filterName];
+            if (Collection.hasOwnProperty(group_name)) {
+                Collection[group_name].push(plt);
+            } else {
+                Collection[group_name] = [plt];
+            }
+        }
+        return results
+    }, {});
+    return Collection;
+
+}
+
 
 const state = {
     plants: Plants,
@@ -25,5 +43,6 @@ const view = (state, actions) => (
     </div>
 )
 window.Plants = Plants;
-console.log(Plants);
+window.parseArray = parseArray;
+
 app(state, actions, view, document.querySelector("#ace-app"));

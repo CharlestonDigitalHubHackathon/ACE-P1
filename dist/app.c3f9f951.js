@@ -5960,6 +5960,26 @@ var Plants = require("./data/plant.json");
 /** @jsx h */
 
 
+function parseArray(data, filterName) {
+  var Collection = {};
+  data.reduce(function (newarr, plt, i) {
+    var results = {};
+
+    if (plt.Region !== null) {
+      var group_name = plt[filterName];
+
+      if (Collection.hasOwnProperty(group_name)) {
+        Collection[group_name].push(plt);
+      } else {
+        Collection[group_name] = [plt];
+      }
+    }
+
+    return results;
+  }, {});
+  return Collection;
+}
+
 var state = {
   plants: Plants,
   count: 0
@@ -5990,7 +6010,7 @@ var view = function view(state, actions) {
 };
 
 window.Plants = Plants;
-console.log(Plants);
+window.parseArray = parseArray;
 (0, _hyperapp.app)(state, actions, view, document.querySelector("#ace-app"));
 },{"hyperapp":"../node_modules/hyperapp/src/index.js","./data/BadTypes":"js/data/BadTypes.js","./views/thumbView":"js/views/thumbView.js","./data/plant.json":"js/data/plant.json"}],"../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -6019,7 +6039,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63627" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51081" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
