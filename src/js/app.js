@@ -38,7 +38,7 @@ const actions = {
 }
 
 
-const view = (state, actions) => mainView();
+const view = (state, actions) => mainView(Plants);
 
 // const view = (state, actions) => (
 //     <div class="row grid-layout tiny four-column">
