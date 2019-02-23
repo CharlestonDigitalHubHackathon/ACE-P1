@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "903285",
+    "ThreadId": "392888",
+    "Html": "\r\n<p>Is there a way to generate all of the image files with my own images?&nbsp; Is it there and I'm just missing it?</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you!</p>\r\n",
+    "PostedDate": "2012-08-23T16:27:45.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "903331",
+    "ThreadId": "392888",
+    "Html": "<p>Hi,</p>\r\n<p>The easiest way to get started generating your own collections is to use the Excel&nbsp;Add-In. You can download it from here -&nbsp;<a href=\"http://www.silverlight.net/learn/data-networking/pivot-viewer/excel-tool\">http://www.silverlight.net/learn/data-networking/pivot-viewer/excel-tool</a>. That page also contains a pretty good explanation on how to use the Add-In.</p>\r\n<p>There is also a command line tool that gives you a little more flexibility -&nbsp;<a href=\"http://www.silverlight.net/learn/data-networking/pivot-viewer/command-line-tool\">http://www.silverlight.net/learn/data-networking/pivot-viewer/command-line-tool</a>.</p>\r\n<p>Otherwise if you want to write your own app to generate dynamic tiles then you can use the Deep Zoom tools -&nbsp;<a href=\"http://www.silverlight.net/archives/whitepapers/deep-zoom-tools\">http://www.silverlight.net/archives/whitepapers/deep-zoom-tools</a>. Generating the CXML is fairly straight forward, the schema is described here -&nbsp;<a href=\"http://www.silverlight.net/learn/data-networking/pivot-viewer/collection-xml-schema\">http://www.silverlight.net/learn/data-networking/pivot-viewer/collection-xml-schema</a>.</p>\r\n<p>Hope that helps</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-08-23T18:57:49.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "903655",
+    "ThreadId": "392888",
+    "Html": "<p>Would you mind please including some steps as to how to integrate your code base with that content?&nbsp; That appears to be where I am stuck.&nbsp; Thank you so much</p>",
+    "PostedDate": "2012-08-24T08:32:55.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "903659",
+    "ThreadId": "392888",
+    "Html": "<p>I solved the problem.&nbsp; I didn't realize you change the cxml location in the actual HTML file you are loading.&nbsp; Thanks for the awesome code!</p>",
+    "PostedDate": "2012-08-24T08:39:44.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "904298",
+    "ThreadId": "392888",
+    "Html": "<p>Great, I'm glad you've got it working.</p>\r\n<p>Let me know if you have any more questions</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-08-26T16:21:04.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

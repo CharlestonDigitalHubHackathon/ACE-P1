@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1006768",
+    "ThreadId": "434503",
+    "Html": "Hi Roger,\r<br />\n<br />\nThanks for this wonderful pivotviewer code. We are integrating this pivot viewer into SharePoint 2013. We fetch all the information dynamically from a SharePoint List. We were able to make those changes and the pivot viewer is working but the problem is that in IE browser the photos are flickering. \r<br />\n<br />\nCould you please help us on this.\r<br />\n<br />\nRegards,\r<br />\nSairam<br />\n",
+    "PostedDate": "2013-02-26T01:01:04.123-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1007360",
+    "ThreadId": "434503",
+    "Html": "Hi Sairam,\r<br />\nIt's hard to tell what the issue could be. Are you getting the images from a SharePoint list or generating them some other way?\r<br />\nHave you see the same flickering with the sample collection?\r<br />\n<br />\nThanks\r<br />\nRoger<br />\n",
+    "PostedDate": "2013-02-26T20:41:21.687-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1007392",
+    "ThreadId": "434503",
+    "Html": "Hi Roger,\r<br />\n<br />\nThanks for your response..... \r<br />\n<br />\nThe sample collection is working alright in IE...\r<br />\n<br />\n<strong>This following is our Scenario</strong>\r<br />\nWe have a custom SharePoint list which stores users influence inside a company. In the list we have a user name along with his image. We then uses this list to generate the CXML for the list. This CXML is given  as input to the pivot viewer. The image url is stores inside a facet tag which has a value of &quot;ProfileImage&quot; for  name attribute. We tried to load the images using &quot;LoadImages&quot; method under pivotviewer.js. It didnt work out for us. Then we went into the DrawEmpty method and did a for loop for the facetvalue to get the source url of the image and we assigned that to a Image element and we drawn the image. This method is working in all browsers, but in IE it is flickering. The most interesting fact is that if we use only one image then it is not flickering...\r<br />\n<br />\nRegards,\r<br />\nSairam <br />\n",
+    "PostedDate": "2013-02-26T22:12:44.62-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1007393",
+    "ThreadId": "434503",
+    "Html": "Are you looping and creating an image element every time the DrawEmpty method is called?\r<br />\nI found that creating an array to cache Images once they have been downloaded is a much more efficient way instead of doing all that work for each animation cycle.\r<br />\n<br />\nHope that helps.<br />\n",
+    "PostedDate": "2013-02-26T22:21:35.193-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1007441",
+    "ThreadId": "434503",
+    "Html": "Yes, we are looping and creating the image elements.\r<br />\n<br />\nOk will try to replicate your method.<br />\n",
+    "PostedDate": "2013-02-27T00:54:56.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

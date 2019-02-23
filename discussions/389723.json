@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "893654",
+    "ThreadId": "389723",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>as far as I understand, by default the control doesn't use collection item size from dzc file. It just sets width and height for an item proportionally to control size and items count. But I have a mixed collection with both landscape and portrait image\r\n orientation. So is there any way to change this behavior?</p>\r\n<p>Thanks,</p>\r\n<p>Juliana</p>\r\n",
+    "PostedDate": "2012-07-31T06:54:09.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893977",
+    "ThreadId": "389723",
+    "Html": "<p>Hi Juliana,</p>\r\n<p>At the moment Deep Zoom support is limited, but I'm currently working on&nbsp;completing&nbsp;it which would include being able to display tiles of various proportions.</p>\r\n<p>Going forward this&nbsp;functionality&nbsp;will be available under a commercially&nbsp;licensed&nbsp;version of the HTML5 PivotViewer from LobsterPot. Please contact&nbsp;enquiries@lobsterpot.com.au for more details.</p>\r\n<p>Thanks</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-07-31T19:31:27.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "856100",
+    "ThreadId": "361611",
+    "Html": "\r\n<p>Hi,&nbsp;</p>\r\n<p>I've been playing around with the lobsterpot html5 pivot viewer. &nbsp;I'd love to use it instead of the silverlight control but I'm running into some rendering issues and was hoping someone could help.</p>\r\n<p>Take a look at:&nbsp;http://www.hockeyshuffle.com/lobsterpot. &nbsp;The control loads find, but none of the images do. &nbsp;Also, the filter facets in the left pane don't expand properly.</p>\r\n<p>You can see what the collection is supposed to look like here:&nbsp;http://www.hockeyshuffle.com/collections/NHL-Regular-Season-2012</p>\r\n<p>Is there something wrong with my collection? &nbsp;Any insight you can give would be greatly appreciated!</p>\r\n",
+    "PostedDate": "2012-07-01T15:08:45.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "856268",
+    "ThreadId": "361611",
+    "Html": "<p>Hi,</p>\r\n<p>I've downloaded a copy of the cxml and dz files and I've managed to reproduce the problems you are having.</p>\r\n<p>The problem with the images is that the id's in the CXML don't match up with the id's in the dzc (f7512e8470894172aa2bc2ee16af2af6\\i\\c.xml) - was the collection generated with the excel addin?</p>\r\n<p>The HTML PV uses the Item Id to then match the I Id in the dzc which at the moment don't match up.</p>\r\n<p>For example the CXML Item with the Id=\"00000000\" should match up with an I Id=\"00000000\"&nbsp;in the dzc.&nbsp;</p>\r\n<p>I'm going to have a closer look at the spec to work out if I'm doing it wrong, and then have a look at fixing it.</p>\r\n<p>I'm also not sure yet what is going on with the left hand menu - I'll keep you posted when I know more.</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-07-02T03:31:26.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "857310",
+    "ThreadId": "361611",
+    "Html": "<p>Hi&nbsp;mvbrocato,</p>\r\n<p>I've just created release 0.6.7 which should fix the issues you are having with the collection images.</p>\r\n<p>It seems the problems with the&nbsp;filter&nbsp;panel are to do with the amount of items it can display - this is something I still need to fix. To get around it in your collection you can include the&nbsp;IsFilterVisible=\"false\" attribute on the FacetCategories you want to hide from the filter panel, you can also hide all Link and DateTime types as they are currently not supported. For example:</p>\r\n<p>&lt;FacetCategory Name=\"url\" Type=\"Link\" p:IsFilterVisible=\"false\"/&gt;</p>\r\n<p>I hope that at least makes your collection usable until the other issues get resolved.</p>\r\n<p>&nbsp;</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-07-04T04:50:36.09-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858139",
+    "ThreadId": "361611",
+    "Html": "<p>Hi Roger,&nbsp;</p>\r\n<p>Thank you for looking into this. &nbsp;I updated my site to the latest version of the pivotviewer today. &nbsp;I now see the images, but the bad news is they don't match up with the players. &nbsp;It seems like this is a problem with every player, not just a select few. &nbsp;Also, I noticed two more things: &nbsp;(1) &nbsp;Numeric filters don't have those neat little column graphs like in the Silverlight control, is that not implemented yet or am I seeing a bug? &nbsp;(2) All of my numeric filters seem to be capped at 99, even when there are values above 99.</p>\r\n<p>You can see this behavior here:&nbsp;http://www.hockeyshuffle.com/lobsterpot</p>",
+    "PostedDate": "2012-07-05T17:31:54.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858146",
+    "ThreadId": "361611",
+    "Html": "<p>Hi,</p>\r\n<p>Yes I've seen the problem with the Numeric facets in your collection, it's a bug that I'll have to investigate.</p>\r\n<p>Not sure why the images are not being matched correctly, unfortunately I'm not familiar enough with hockey to know where the matching problems are.</p>\r\n<p>&nbsp;</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-07-05T17:51:04.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "860240",
+    "ThreadId": "361611",
+    "Html": "<p>Hi Again,</p>\r\n<p>You'll be please to know that the latest release (0.6.8) has resolved the issue with Numeric facets.</p>\r\n<p>I'm still unsure what the issue is with the tile images not matching the items - are you able to give me an example from your collection of a player that does not match their description?</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-07-11T03:50:30.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "867051",
+    "ThreadId": "361611",
+    "Html": "<p>Thanks for the update. &nbsp;I can confirm that the numeric facets are much improved. &nbsp;I noticed a few minor issues with 0.6.8:</p>\r\n<p>1.) &nbsp;When you start filtering by a numeric facet, applying an upper or lower bound, this displays a label above the column chart which pushes the column chart down. &nbsp;The silverlight control leaves space for this label and thus the chart remains in the same place when it is displayed.</p>\r\n<p>2.) When you constrain the upper or lower bounds using the slider, the columns in the chart do not gray out as they do with the silverlight control.</p>\r\n<p>Again, these are very minor, but I figured I'd point them out as I'm sure they are easy to fix.</p>\r\n<p>I did notice as well that the search box doesn't seem to work on my collection. &nbsp;I tried for example searching for a player by name and nothing happened. &nbsp;Not sure if it makes a difference but I am using Chrome&nbsp;<span>20.0.1132.57 on Mac OS. &nbsp;Also, if I look at my activity monitor, my chrome window seems to be pegged at 100% CPU when I have the pivotviewer open.</span></p>\r\n<p>Regarding the mismatched images, if you sort the collection by player_id, I think the problem is revealed - it looks like the control is truncating the rightmost digit in the player_id, resulting in multiple players sharing the same image. &nbsp;I hope this helps. &nbsp;I've updated the site with 0.6.8 &gt;&gt;&nbsp;<span>http://www.hockeyshuffle.com/lobsterpot.</span></p>\r\n<p>Thanks again!</p>\r\n<p>Mark</p>",
+    "PostedDate": "2012-07-14T16:19:00.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "934509",
+    "ThreadId": "361611",
+    "Html": "<p>Hi everyone,</p>\r\n<p>Roger, first of all thank you for this amazing work and the contribution to the open-source community.</p>\r\n<p><strong>Problem:</strong> I have similar problems with the images of the controls. The red \"clear\" button (image) does not show up in any of the facet categories in the filter panel. The same is true for the graph view and the grid view image. However, LobsterPot logo is shown in the left hand corner as (i guess it is) brand image of the collection.</p>\r\n<p><strong>Environment:</strong> I'm using firefox 16.0.2 and your example collection of PASS Summit 2011 offline.</p>\r\n<p>Any idea what produces this kind of problem? (I'm a newbie to jQuery and js but I'll have a look into it when you can point a rough direction.)</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Besides:</strong> I had a minor issue searching for information (\"StreamInsight\") as part of the description of an item because it could not be found in your example collection.</p>\r\n<p>&nbsp;</p>\r\n<p>Best Regards,</p>\r\n<p>&nbsp;</p>\r\n<p>Felix</p>",
+    "PostedDate": "2012-10-30T19:37:31.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "934512",
+    "ThreadId": "361611",
+    "Html": "<p>Hi Felix,</p>\r\n<p>The missing images are most likely due to the path in the pivotviewer.css file being incorrect for your environment. You'll just have to update the path - look for:&nbsp;<span>background-image</span><span>: </span><span>url('../Content/images/FilterPanelClear.png')</span><span>;</span></p>\r\n<p><span>Thanks for letting me know about the collection, I had a clean up on the host&nbsp;recently&nbsp;and deleted it without realising.</span></p>\r\n<p>Values in the description are not currently searchable, but that would be a useful feature.</p>\r\n<p>Thanks</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-10-30T19:45:06.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

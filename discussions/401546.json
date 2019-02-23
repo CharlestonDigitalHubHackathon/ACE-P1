@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "935232",
+    "ThreadId": "401546",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>downloaded source code.</p>\r\n<p>Going into the examples folder and trying out the PASS Summit 2011 example gives the above error.</p>\r\n<p>404. &nbsp; Any idea what is wrong?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards,</p>\r\n<p>Throstur</p>\r\n",
+    "PostedDate": "2012-11-01T05:42:03.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1072675",
+    "ThreadId": "401546",
+    "Html": "Hi,\r<br />\nthe problem is that IIS doesn't manage cxml extension.\r<br />\n<br />\nI solved configuring MIME Type in IIS.\r<br />\n<br />\nExtension<br />\n<ul>\n<li>.cxml\r<br />\nMIME Type</li>\n<li>\ntext/xml<br />\n</li>\n</ul>\nRegards,\r<br />\n  Gaetano<br />\n",
+    "PostedDate": "2013-07-25T03:05:53.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

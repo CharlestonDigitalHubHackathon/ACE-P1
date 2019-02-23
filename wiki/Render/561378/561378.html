@@ -1,0 +1,39 @@
+<div class="wikidoc">
+<p>The simplest way to get started is to download the latest version of the LobsterPot HTML5 PivotViewer control.<br>
+The zip package contains all the files required to display CXML based collections.</p>
+<p>The control relies upon the following script dependencies</p>
+<p></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../lib/jquery/jquery-1.7.1.min.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../lib/jquery-ui/jquery-ui-1.8.17.custom.min.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../lib/modernizr/modernizr.custom.65936.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../lib/easing/easing.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../lib/jquery.mousewheel/jquery.mousewheel.min.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;</span><span style="color:#a31515">script</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/javascript&quot;</span> <span style="color:red">src</span><span style="color:blue">=</span><span style="color:blue">&quot;../pivotviewer.min.js&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">script</span><span style="color:blue">&gt;</span>
+</pre>
+</div>
+<p></p>
+<p>In addition to that the main&nbsp;style sheet&nbsp;must also be referenced&nbsp;</p>
+<p></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">link</span> <span style="color:red">href</span><span style="color:blue">=</span><span style="color:blue">&quot;../style/pivotViewer.css&quot;</span> <span style="color:red">rel</span><span style="color:blue">=</span><span style="color:blue">&quot;stylesheet&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:blue">&quot;text/css&quot;</span> <span style="color:blue">/&gt;</span>
+</pre>
+</div>
+<p></p>
+<p>The PivotViewer control can be&nbsp;inserted&nbsp;into a simple div element. For example the following div</p>
+<div style="color:black; background-color:white">
+<pre style="color:black"><span style="color:blue">&lt;</span><span style="color:#a31515">div</span> <span style="color:red">id</span><span style="color:blue">=</span><span style="color:blue">&quot;pivotviewer&quot;</span> <span style="color:red">style</span><span style="color:blue">=</span><span style="color:blue">&quot;height:600px;&quot;</span><span style="color:blue">&gt;</span><span style="color:blue">&lt;/</span><span style="color:#a31515">div</span><span style="color:blue">&gt;</span></pre>
+</div>
+<div style="color:black; background-color:white">
+<p>Is then referenced using the following jQuery syntax.</p>
+<pre>$(document).ready(<span style="color:blue">function</span> () {
+    $(<span style="color:#a31515">'#pivotviewer'</span>).PivotViewer({
+        Loader: <span style="color:blue">new</span> PivotViewer.Models.Loaders.CXMLLoader(<span style="color:#a31515">&quot;collections/PASS%20Summit%202011.cxml&quot;</span>)
+    });
+});</pre>
+</div>
+<p>CXML based collections use the CXMLLoader object to create the underlying data structure required to render the collection. The CXMLLoader expects the path to the CXML file in it's constructor.</p>
+<p>The CXMLLoader is based on the&nbsp;<span style="background-color:white">PivotViewer.Models.Loaders.ICollectionLoader object, see the section on
+<a title="Loader" href="http://lobsterpothtml5pv.codeplex.com/wikipage?title=Loaders">
+Loaders</a>.</span></p>
+</div><div class="ClearBoth"></div>

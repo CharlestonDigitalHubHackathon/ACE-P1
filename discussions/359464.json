@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "848473",
+    "ThreadId": "359464",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>this is really a great piece of work, congratulations and thanks for sharing!</p>\r\n<p>Are you planning to add slider controls for numeric/date facets, to allow users to define the filter ranges rather than just selecting between all the current values?</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2012-06-13T08:22:56.967-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "848669",
+    "ThreadId": "359464",
+    "Html": "<p>Hi,</p>\r\n<p>I've recently added sliders to Numeric facets so they work exactly the same as the Sliverlight version - this is in the latest version of the control. Implementing Date facets is still on my to-do list.</p>\r\n<p>I'm glad you've found the control useful - If you've built a collection I would be keen to have a look and add it to the collection showcase.</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-06-13T16:00:02.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

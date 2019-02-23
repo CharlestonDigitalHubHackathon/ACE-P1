@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Not sure if this is an issue with me or not.\r\n\r\nBeen playing with LobsterPot PivotViewer, for a few days now. Using MVC 4.\r\n\r\nWhen I click on an image, it zooms in. Click on it again, it zooms out, then when I move the mouse, the hover functions excepts with \"Unable to get property 'length' of undefined or null reference.\"\r\n\r\nAs far as code goes,\r\n\r\n           $('#pivotviewer').PivotViewer({\r\n               Loader: new PivotViewer.Models.Loaders.CXMLLoader(cxml)\r\n           });\r\n\r\nwhere cxml is a string containing a reference to a cxml file that works fine with the Silverlight control.\r\n\r\nSee attachment.\r\n\r\nThis is frustrating.\r\n\r\nI can't get it to fail on the example on the site.\r\n\r\nThe only thing I believe I have different is my project is using\r\njQuery 1.8.2\r\nand\r\njQuery ui 1.9.2\r\n\r\nUpdate:\r\nI've removed jquery 1.82 and JQuery ui 1.9.2 and used the files in the sample code and it still fails, even if I copy and paste the markup from the sample code and use the js files from the sample.\r\n\r\nso it isn't working for me under MVC.\r\n\r\n\r\n\r\n\r\n\r\n",
+    "LastUpdatedDate": "2013-04-15T06:30:27-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "LobsterPotHTML5PV",
+    "ReportedDate": "2013-04-15T01:13:26.43-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unable to get property 'length' of undefined or null reference",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 5
+  },
+  "FileAttachments": [
+    {
+      "FileId": 663971,
+      "FileName": "lobsterpot.png",
+      "DownloadUrl": ".\\663971"
+    }
+  ],
+  "Comments": []
+}

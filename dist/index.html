@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 5 PivotViewer: PASS Summmit 2012</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="content/pivotviewer.css" rel="stylesheet" type="text/css" />
+    <link href="content/pivotviewer-0.9.33.templates.min.html" rel="template" id="pv-templates" />
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.custom.js"></script>
+    <script type="text/javascript" src="scripts/easing.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+	<!--<script type="text/javascript" src="scripts/mobiscroll-2.0.2.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/mustache.min.js"></script>
+	<script type="text/javascript" src="scripts/ICanHaz-no-mustache.min.js"></script>
+	<script type="text/javascript" src="scripts/canvg.min.js"></script>
+    <script type="text/javascript" src="scripts/rgbcolor.min.js"></script>
+	<script type="text/javascript" src="scripts/pubsub.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nouislider.min.js"></script>-->
+    <script type="text/javascript" src="scripts/pivotviewer.min.js"></script>
+</head>
+<body>
+	<div id="pivotviewer"></div>
+	<script type="text/javascript">
+		var debug = false;
+		$(document).ready(function () {
+			$('#pivotviewer').PivotViewer({ 
+				Loader: new PivotViewer.Models.Loaders.CXMLLoader("/Collections/PASS Summit 2012.cxml"),
+				ViewerState: "$view$=2&$facet0$=Category",
+				AnimateBlank: false,
+				AllowItemsCheck: true,
+				ItemAdornerTemplate: "tile_link_adorner",
+				CopyToClipboard: true,
+				DisplayFeedback: true
+			});
+		});
+	</script>
+	<script type="text/html" id="tile_link_adorner">
+        <ul class="pv-adorner-list">
+            <li>
+                <a href="{{#Item.Facets.Session URL}}{{Href}}{{/Item.Facets.Session URL}}" target="_blank" class="pv-adorner-basiclink">{{#Item.Facets.Session URL}}{{Value}}{{/Item.Facets.Session URL}}</a>
+            </li>
+            {{#Item.Facets.Speaker}}
+            <li>
+                <a href="{{Href}}" target="_blank" class="pv-adorner-basiclink">{{Value}}</a>
+            </li>
+            {{/Item.Facets.Speaker}}
+        </ul>
+    </script>
+</body>
+</html>

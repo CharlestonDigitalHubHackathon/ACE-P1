@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "There are various issues with the accordion control.\r\nOne highlighted by this implementation - http://data.oceandrilling.org/labs/html5pivot is that the height of the list exceeds the control causing double scroll bars.",
+    "LastUpdatedDate": "2017-12-06T23:25:53.503-08:00",
+    "PlannedForRelease": "LobsterPot HTML5 PivotViewer 0.6.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "LobsterPotHTML5PV",
+    "ReportedDate": "2012-05-10T05:30:17.89-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Facet accordion control overflows parent container",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Overflow fixed in changeset ee72bef409a7",
+      "PostedDate": "2012-05-16T16:21:56.41-07:00",
+      "Id": 66009
+    }
+  ]
+}

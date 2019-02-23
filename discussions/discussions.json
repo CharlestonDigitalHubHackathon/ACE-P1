@@ -1,0 +1,112 @@
+[
+  {
+    "Id": "354054",
+    "Title": "limit facet box to N displayed items",
+    "LatestDate": "2012-05-17T07:33:41.457-07:00"
+  },
+  {
+    "Id": "354055",
+    "Title": "limit facet box to N displayed items",
+    "LatestDate": "2012-04-30T13:31:21.417-07:00"
+  },
+  {
+    "Id": "354510",
+    "Title": "Load cxml file created by SilverLight",
+    "LatestDate": "2012-06-26T00:55:31.013-07:00"
+  },
+  {
+    "Id": "359042",
+    "Title": "Consider MIT License?",
+    "LatestDate": "2012-06-11T15:42:17.967-07:00"
+  },
+  {
+    "Id": "359464",
+    "Title": "Range sliders on numeric/date facets?",
+    "LatestDate": "2012-06-13T16:00:02.263-07:00"
+  },
+  {
+    "Id": "361611",
+    "Title": "Having some issues with a collection that works in silverlight",
+    "LatestDate": "2012-10-30T19:45:06.643-07:00"
+  },
+  {
+    "Id": "373607",
+    "Title": "Pixelization on Zoom",
+    "LatestDate": "2012-07-18T15:46:48.67-07:00"
+  },
+  {
+    "Id": "389723",
+    "Title": "Collection Item Size",
+    "LatestDate": "2012-07-31T19:31:27.633-07:00"
+  },
+  {
+    "Id": "392888",
+    "Title": "Using this with my own images",
+    "LatestDate": "2012-08-26T16:21:04.503-07:00"
+  },
+  {
+    "Id": "399897",
+    "Title": "linking CXML",
+    "LatestDate": "2012-10-18T14:49:44.907-07:00"
+  },
+  {
+    "Id": "401546",
+    "Title": "Error 404",
+    "LatestDate": "2013-07-25T03:05:53.317-07:00"
+  },
+  {
+    "Id": "404136",
+    "Title": "Depth zoom",
+    "LatestDate": "2012-11-21T14:48:05.247-08:00"
+  },
+  {
+    "Id": "431069",
+    "Title": "Having some issues with a Infopanel",
+    "LatestDate": "2013-01-27T22:48:54.597-08:00"
+  },
+  {
+    "Id": "434503",
+    "Title": "Image shown in the tiles should be made dynamic.",
+    "LatestDate": "2013-02-27T00:54:56.723-08:00"
+  },
+  {
+    "Id": "435277",
+    "Title": "How to align the images at center in Graph View",
+    "LatestDate": "2013-03-06T01:36:01.417-08:00"
+  },
+  {
+    "Id": "435694",
+    "Title": "Unable to fix the center align image issue in Histogram View",
+    "LatestDate": "2013-03-07T02:10:18.883-08:00"
+  },
+  {
+    "Id": "436448",
+    "Title": "Maximum zoom level with mouse",
+    "LatestDate": "2013-03-13T05:21:12.713-07:00"
+  },
+  {
+    "Id": "437489",
+    "Title": "Check out my lobster example Panerai Pivot.com",
+    "LatestDate": "2013-03-24T05:28:02.4-07:00"
+  },
+  {
+    "Id": "448241",
+    "Title": "Pricing of LobsterPot HTML5 PivotViewer",
+    "LatestDate": "2013-07-02T15:52:20.27-07:00"
+  },
+  {
+    "Id": "540313",
+    "Title": "Page Scroll and mouse positioning issue with HTML5 PivotViewer",
+    "LatestDate": "2014-03-27T03:38:19.917-07:00"
+  },
+  {
+    "Id": "540766",
+    "Title": "Overlaying metadata on images",
+    "LatestDate": "2014-03-31T21:04:31.203-07:00"
+  },
+  {
+    "Id": "576080",
+    "Title": "Using Pivotviewer with dynamically generated Images",
+    "LatestDate": "2014-12-22T13:23:52.077-08:00"
+  }
+]

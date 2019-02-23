@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "928718",
+    "ThreadId": "399897",
+    "Html": "\r\n<p>Is it possible to link multiple CXML files so you can move between?</p>\r\n<p>example in excel</p>\r\n<p>Sheet 1 - is about breeders - generate CXML&nbsp;</p>\r\n<p>image =&nbsp;breeder's logo and facets about their dogs</p>\r\n<p>Sheet 2 - details about their dogs CXML</p>\r\n<p>image = dog breed &nbsp;and its charateristics&nbsp;</p>\r\n<p>From sheet 1 I have a breeder called Good dogs that breeds beagles, &nbsp;I would want to link to sheet 2 that has information about beagles</p>\r\n<p>What would the link look like?</p>\r\n<p>thanks in advance for any ideas,</p>\r\n<p>Paul</p>\r\n",
+    "PostedDate": "2012-10-18T05:46:45.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "929056",
+    "ThreadId": "399897",
+    "Html": "<p>Hi Paul,</p>\r\n<p>You could have a link in the breeder info panel that could take the user to a second page hosting a collection.</p>\r\n<p>The link could be as simple as http://&lt;your site&gt;/beagles.html, using some sort of naming convention for each dog breed means that you could use the excel string functions to generate the links for you.</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-10-18T14:49:44.907-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

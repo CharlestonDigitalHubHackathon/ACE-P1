@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "1009882",
+    "ThreadId": "435277",
+    "Html": "I'm Currently working on Pivot viewer in Share point 2013. I have successfully brought in all data but according to my requirement while loading the images initial i am showing images in histogram(graph)view.By default,the images in my output is left aligned. i refereed your webpage and found that even your images in the output is left aligned. I want to make it to be aligned at the center.What should i Do? Any help is really appreciated.<br />\n",
+    "PostedDate": "2013-03-04T04:28:46.557-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1010916",
+    "ThreadId": "435277",
+    "Html": "Hi,\r<br />\nThe solution is to update the Draw method of the PivotViewer.Views.Tile object (in the TileController). You'll need to find the difference between the image size and the tile size and divide it by 2 to get the left padding in pixels. The same applies to the top padding.\r<br />\n<br />\nThis has been fixed in the commercial version, which you can contact LobsterPot Solutions to find out more.<br />\n",
+    "PostedDate": "2013-03-05T15:52:25.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1010993",
+    "ThreadId": "435277",
+    "Html": "Thanks for you reply roger.\r<br />\n<br />\nI have taken the difference between the image width and tile size and then divided by 2 as per you said. Now my question is where should i give that value for left &amp; top Padding.\r<br />\n<br />\nPlease be precise. Thanks in advance\r<br />\n<br />\n<br />\nRegards,\r<br />\nRajesh<br />\n",
+    "PostedDate": "2013-03-05T23:16:19.323-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1011007",
+    "ThreadId": "435277",
+    "Html": "Thanks for you reply roger.\r<br />\n<br />\nI have taken the difference between the image width and tile size and then divided by 2 as per you said. Now my question is where should i give that value for left &amp; top Padding.\r<br />\n<br />\nPlease be precise. Thanks in advance\r<br />\n<br />\n<br />\nRegards,\r<br />\nRajesh<br />\n",
+    "PostedDate": "2013-03-05T23:37:43.117-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1011008",
+    "ThreadId": "435277",
+    "Html": "Thanks for you reply roger.\r<br />\n<br />\nI have taken the difference between the image width and tile size and then divided by 2 as per you said. Now my question is where should i give that value for left &amp; top Padding.\r<br />\n<br />\nPlease be precise. Thanks in advance\r<br />\n<br />\n<br />\nRegards,\r<br />\nRajesh<br />\n",
+    "PostedDate": "2013-03-05T23:38:04.347-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1011026",
+    "ThreadId": "435277",
+    "Html": "Thanks for you reply roger.\r<br />\n<br />\nI have taken the difference between the image width and tile size and then divided by 2 as per you said. Now my question is where should i give that value for left &amp; top Padding.\r<br />\n<br />\nPlease be precise. Thanks in advance\r<br />\n<br />\n<br />\nRegards,\r<br />\nRajesh<br />\n",
+    "PostedDate": "2013-03-06T00:41:19-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1011050",
+    "ThreadId": "435277",
+    "Html": "Thanks for you reply roger.\r<br />\n<br />\nI have taken the difference between the image width and tile size and then divided by 2 as per you said. Now my question is where should i give that value for left &amp; top Padding.\r<br />\n<br />\nPlease be precise. Thanks in advance\r<br />\n<br />\n<br />\nRegards,\r<br />\nRajesh<br />\n",
+    "PostedDate": "2013-03-06T01:36:01.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

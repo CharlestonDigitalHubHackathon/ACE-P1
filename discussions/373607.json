@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "873492",
+    "ThreadId": "373607",
+    "Html": "\r\n<p>I apologize if I've missed some details here regarding the image display, but is there an issue with the display of the zoomed in images? In all of the local tests that I've done, when clicking and zooming in on an individual tile, the image displays extremely\r\n pixelated. I've also seen this behavior on the PASS demo as well as some links people have posted in the discussions here.</p>\r\n<p>Is this a known issue with the control, or is this a problem with the image construction? Any suggestions would be appreciated.</p>\r\n",
+    "PostedDate": "2012-07-18T06:15:45.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "874820",
+    "ThreadId": "373607",
+    "Html": "<p>Hi ClemJax,</p>\r\n<p>At this point in time the full Deep Zoom functionality has not yet been completed, which is why when you zoom in to a certain level the image quality does not improve.</p>\r\n<p>Lately I've been building collections based on dynamic tiles without Deep Zoom. The tiles are created completely in the browser and so far has had improved performance over Deep Zoom collections. It's worth noting that collections that are heavily image based will still need to use Deep Zoom.</p>\r\n<p>Here is an example collection that uses dynamic tiles -&nbsp;pivot.lobsterpot.com.au/pass2012.htm. As you can see this also has basic Semantic Zoom&nbsp;functionality.</p>",
+    "PostedDate": "2012-07-18T15:46:48.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

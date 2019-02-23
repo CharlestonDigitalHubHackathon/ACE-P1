@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "830355",
+    "ThreadId": "354054",
+    "Html": "\r\n<p>I've been trying LobsterPot HTML5 pivotviewer at&nbsp;http://data.oceandrilling.org/labs/html5pivot/</p>\r\n<p>Is there some way to designate how may items show up in a facet box so that the div then presents a scrolling list? &nbsp; Is this just setting a max height on a div in the CSS somewhere or is this in the js file?</p>\r\n<p>Thanks much.. &nbsp;wonderful package!</p>\r\n",
+    "PostedDate": "2012-04-30T13:27:17.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "834535",
+    "ThreadId": "354054",
+    "Html": "<p>Hi fils, I just saw the pivot your working on - looks awesome!</p>\r\n<p>I need to do some more work on the accordion control, there are a few bugs with it overflowing the control. It's the first time I've seen that particular issue so I'll create a new issue for it so I can get fixed.</p>\r\n<p>I also noticed you've struck the Deep Zoom limit with the image resolution. Displaying higher resolution images is also on the to do list :)</p>\r\n<p>&nbsp;</p>\r\n<p>Glad you've found it useful.</p>",
+    "PostedDate": "2012-05-10T05:27:55.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "834566",
+    "ThreadId": "354054",
+    "Html": "<p>Roger,</p>\r\n<p>&nbsp; &nbsp; Thanks.. &nbsp;I have 2 more data sets just waiting for something just like this too. :) &nbsp; I'll keep an eye on the codeplex site here and be anxious to try out any changes etc. &nbsp;Let me know if there is anything I can do/test. &nbsp;Feel free to suck down the data sets from that site if they are of use in testing.</p>\r\n<p>&nbsp;</p>\r\n<p>Take care and THANKS!</p>\r\n<p>Doug</p>",
+    "PostedDate": "2012-05-10T06:33:16.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837570",
+    "ThreadId": "354054",
+    "Html": "<p>Roger,</p>\r\n<p>&nbsp; Pulled down the new code base to and set it up at: &nbsp;http://data.oceandrilling.org/labs/html5pivot/index.html</p>\r\n<p>&nbsp; &nbsp;I am trying to see where in the CSS I can set the max height of the ui-accordian ui-accordian-content. &nbsp; It gets set to 447px in my example but if I use chrome dev tools I can inspect and set it to something like 200px. &nbsp;&nbsp;</p>\r\n<p>I thought editing the line:</p>\r\n<p>.ui-accordion .ui-accordion-content{/*padding:1em 2.2em;*/<strong>height:200px;</strong>border-top:0;margin-top:-2px;position:relative;top:1px;margin-bottom:2px;overflow-y:auto!important;overflow-x:hidden!important;display:none;zoom:1}</p>\r\n<p>in pivotviewer-min.css would work but it seems to get overridden somewhere. &nbsp;Is this being calculated and set by the js somewhere? &nbsp;</p>\r\n<p>Do you have a suggestion on best ways to override and set this to a value?</p>\r\n<p>Thanks.. &nbsp; this pivotviewer package is really impressive! &nbsp;I've been showing it around to some people while at our data management meeting in Edinburgh. &nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Take care</p>\r\n<p>Doug</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-05-17T01:45:56.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837638",
+    "ThreadId": "354054",
+    "Html": "<p>Hi Doug,</p>\r\n<p>The height is being set via JavaScript so that it is always the full height of the parent DIV - height is always tricky.</p>\r\n<p>If you override the&nbsp;.pv-filterpanel-accordion class in pivotviewer.css you can set the height to any value you'd like. For example, to set it to 200px:</p>\r\n<p>.pv-filterpanel-accordion { overflow-y:auto; overflow-x:hidden; margin-top:6px; <strong>height: 200px !important;</strong> }</p>\r\n<p>The key part is adding&nbsp;<strong>!important</strong> after the style.</p>\r\n<p>&nbsp;</p>\r\n<p>Let me know how you go</p>\r\n<p>Roger</p>",
+    "PostedDate": "2012-05-17T05:10:18.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837707",
+    "ThreadId": "354054",
+    "Html": "<p>Roger,<br />thanks... &nbsp; I think I got more of the effect I was after with:</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; .ui-accordion .ui-accordion-content{/*padding:1em 2.2em;*/<strong>height:200px !important</strong>;border-top:0;margin-top:-2px;position:relative;top:1px;margin-bottom:2px;overflow-y:auto!important;overflow-x:hidden!important;display:none;zoom:1}</p>\r\n<p>thanks for the !important tip... &nbsp; I did not know this. &nbsp;</p>\r\n<p>The results are up at:&nbsp;http://data.oceandrilling.org/labs/html5pivot/index.html</p>\r\n<p>Next I need to see how to link out from here to the URL (the href attribute in the item node of the cxml) and I can really start to try this out with some \"real\" data someplace people can see it. &nbsp;:) &nbsp;</p>\r\n<p>Thanks much</p>\r\n<p>Doug</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-05-17T07:33:41.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

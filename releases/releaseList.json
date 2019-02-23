@@ -1,0 +1,145 @@
+[
+  {
+    "Id": "0",
+    "Name": "LobsterPot HTML5 PivotViewer 0.6.7",
+    "DevelopmentStatus": "Beta",
+    "Description": "Minor change to the way CXML Img attribute is handled - converted to int from string.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-07-04T04:47:12.463-07:00",
+    "Files": [
+      {
+        "Id": "3a953d8e-b38b-4dfc-ac31-33a871a9f997",
+        "FileName": "lobsterpothtml5pivotviewer-0.6.7.zip",
+        "Url": "./0/3a953d8e-b38b-4dfc-ac31-33a871a9f997",
+        "Type": "Application",
+        "UploadDate": "2012-07-04T04:47:11.603-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "LobsterPot HTML5 PivotViewer 0.6.6",
+    "DevelopmentStatus": "Beta",
+    "Description": "1. When IsFilterVisible and IsMetaDataVisible are not defined then default to true\n2. Added error alert for when cxml or dzc files are unavailable\n3. If dzi file is unavailable work out size information from dzc\n4. Added the item as a parameter to the DrawFunction - this allows for tiles to be\ncreated dynamically and use the item values.\n5. Fixed bug with the info panel filter links performing a postback",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-06-06T22:25:05.433-07:00",
+    "Files": [
+      {
+        "Id": "5842c6ec-c1be-46b4-a65f-d7bb537edf60",
+        "FileName": "lobsterpothtml5pivotviewer-0.6.6.zip",
+        "Url": "./1/5842c6ec-c1be-46b4-a65f-d7bb537edf60",
+        "Type": "Application",
+        "UploadDate": "2012-06-06T22:25:04.7-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "LobsterPot HTML5 PivotViewer 0.6.5",
+    "DevelopmentStatus": "Beta",
+    "Description": "Added breadcrumb navigation for facet filters",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-05-17T01:30:01.983-07:00",
+    "Files": [
+      {
+        "Id": "ebd4d8d9-87a1-49cb-aab3-ae94ad0e3389",
+        "FileName": "lobsterpothtml5pivotviewer-0.6.5.zip",
+        "Url": "./2/ebd4d8d9-87a1-49cb-aab3-ae94ad0e3389",
+        "Type": "Source Code",
+        "UploadDate": "2012-05-17T01:30:01.17-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "LobsterPot HTML5 PivotViewer 0.6.0",
+    "DevelopmentStatus": "Beta",
+    "Description": "Zoom fixes!\n* Added zoom and item zoom to Graph View\n* Fixed zoom centre point in both views\n* Added zoom control to top right\n* Added easing on scrollwheel zoom\nFixed bug with Accordion menu overflowing at the bottom\nImplemented search/word wheel filtering\nCompleted ViewerState implementation",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-05-16T16:12:22.4-07:00",
+    "Files": [
+      {
+        "Id": "994e7c33-0be8-4425-a398-7ba3f72e79dc",
+        "FileName": "lobsterpothtml5pivotviewer-0.6.0.zip",
+        "Url": "./3/994e7c33-0be8-4425-a398-7ba3f72e79dc",
+        "Type": "Source Code",
+        "UploadDate": "2012-05-16T16:12:21.62-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "LobsterPot HTML5 PivotViewer 0.5.0",
+    "DevelopmentStatus": "Beta",
+    "Description": "* Added support for Numeric facet types\n* Made some performance improvements to enable collections larger than previously possible (tested at 1600 items). In order to achieve this the tile images are replaced with a generic place holder when animating.\n* Resolved Issue #1 - ReferenceError in Graph View\n\nPerformance is an ongoing effort, more updates to follow.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-05-08T03:45:32.593-07:00",
+    "Files": [
+      {
+        "Id": "9fbb2668-676b-4535-9d60-02fda47e75d6",
+        "FileName": "lobsterpothtml5pivotviewer-0.5.0.zip",
+        "Url": "./4/9fbb2668-676b-4535-9d60-02fda47e75d6",
+        "Type": "Source Code",
+        "UploadDate": "2012-05-08T03:44:43.013-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "Name": "LobsterPot HTML5 PivotViewer 0.4.5",
+    "DevelopmentStatus": "Beta",
+    "Description": "* Minor update to URL handling of Deep Zoom collections\n* Included example collection",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-04-24T21:49:21.553-07:00",
+    "Files": [
+      {
+        "Id": "284dc513-5cc2-47ae-9f1f-348f945e10e6",
+        "FileName": "lobsterpothtml5pivotviewer-0.4.5.zip",
+        "Url": "./5/284dc513-5cc2-47ae-9f1f-348f945e10e6",
+        "Type": "Source Code",
+        "UploadDate": "2012-04-23T17:42:18.01-07:00"
+      },
+      {
+        "Id": "9c44c72e-9e6b-44df-a3ef-5ddf5194fe7d",
+        "FileName": "lobsterpothtml5pivotviewer-0.4.5 with examples.zip",
+        "Url": "./5/9c44c72e-9e6b-44df-a3ef-5ddf5194fe7d",
+        "Type": "Example",
+        "UploadDate": "2012-04-24T21:49:20.477-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "Name": "LobsterPot HTML5 PivotViewer 0.4.4",
+    "DevelopmentStatus": "Beta",
+    "Description": "The LobsterPot HTML5 PivotViewer control is a jQuery plugin that renders data collections based on the CXML and DeepZoom schemas.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-04-19T21:12:34.377-07:00",
+    "Files": [
+      {
+        "Id": "9839c82b-a6b7-4cab-9edb-518ec7553293",
+        "FileName": "lobsterpothtml5pivotviewer-0.4.4.zip",
+        "Url": "./6/9839c82b-a6b7-4cab-9edb-518ec7553293",
+        "Type": "Source Code",
+        "UploadDate": "2012-04-19T21:12:33.923-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "7",
+    "Name": "LobsterPot HTML5 PivotViewer 0.6.8",
+    "DevelopmentStatus": "Beta",
+    "Description": "Fixed numeric facets and histogram filter by correctly converting Numeric facet values from string to float.\nDue to popular demand turned off \"greying out\" of tiles when animating.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-07-11T20:00:32.17-07:00",
+    "Files": [
+      {
+        "Id": "b1911db1-281b-422c-bf0b-5d5c067a0cd2",
+        "FileName": "lobsterpothtml5pivotviewer-0.6.8.zip",
+        "Url": "./7/b1911db1-281b-422c-bf0b-5d5c067a0cd2",
+        "Type": "Application",
+        "UploadDate": "2012-07-11T20:00:30.983-07:00"
+      }
+    ]
+  }
+]

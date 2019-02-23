@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "945315",
+    "ThreadId": "404136",
+    "Html": "\r\n<p>My question is, how I can limit zoomslider a number x?</p>\r\n<p>I think this is the part where it is in file&nbsp;pivotviewer-0.8.27.min.js</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><div style=\"color:black; background-color:white\"><pre>v = <span style=\"color:blue\">new</span> PivotViewer.ZoomController(n, k.MainPanelDimensions().height);\n<span style=\"color:blue\"><span style=\"white-space:pre\">\t</span>var</span> s = S;\n\tm = e(<span style=\"color:#a31515\">&quot;.pv-toolbarpanel-zoomslider&quot;</span>),\n\t<span style=\"white-space:pre\">\t</span>m.slider({\n\t\t<span style=\"white-space:pre\">\t</span>max : 100,\n\t\t\tslide : <span style=\"color:blue\">function</span> (e, r) {\n\t\t\t\t<span style=\"color:blue\">var</span> i = v.maxScale * r.value * .01;\n\t\t\t\ti = i &lt; 1 ? 1 : i,\n\t\t\t\tv.zoom(n / 2, t / 2, i),\n\t\t\t\ts = r.value\n\t\t\t}\n\t\t});\n</pre>\n</div>\n<br></pre>\r\n</div>\r\n",
+    "PostedDate": "2012-11-21T12:00:04.327-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "945375",
+    "ThreadId": "404136",
+    "Html": "\r\n<p>Version 0.8.27 isn't&nbsp;available&nbsp;under the GPLv2 licence, please contact me for more details.</p>\r\n",
+    "PostedDate": "2012-11-21T14:48:05.247-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
