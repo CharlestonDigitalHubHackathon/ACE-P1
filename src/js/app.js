@@ -15,21 +15,22 @@ const actions = {
     down: () => state => ({ count: state.count - 1 }),
     up: () => state => ({ count: state.count + 1 })
 }
-const card = (item) => {
-    return (<div class="col3"><div class="card">
-                <div class="card-header">
-                    <h1 class="card-title">{item.name}</h1>
-                    <h3 class="card-meta">Software and hardware</h3>
-                </div>
-                <div class="card-body">
-                    <p>Empower every person to achieve more.</p>
-                </div>
-                    <div class="card-footer"><a href="#" class="btn btn-primary">View More</a></div>
-            </div></div>
+const thumbView = (item) => {
+    return (<div class={'card ' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')}>
+        <div class="card-header">
+            <div class="country-image">
+                <img src="images/country/usa.png" />
+            </div>
+            <div class="card-title">
+                <div class="card-maintitle">{item.name}</div>
+                <div class="card-subtitle">{item.country_long}</div>
+            </div>
+        </div>
+    </div>
         )
 };
 
-const bcard = (item) => {
+const detailView = (item) => {
     return (
         <div class="card">
             <div class="card-header">
@@ -89,8 +90,8 @@ const bcard = (item) => {
 }
 
 const view = (state, actions) => (
-    <div class="row grid-layout">
-        {state.plants.map((plant,i)=> bcard(plant) )}
+    <div class="row grid-layout tiny four-column">
+        {state.plants.map((plant, i) => thumbView(plant) )}
     </div>
 )
 console.log(Plants);

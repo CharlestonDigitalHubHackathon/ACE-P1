@@ -5932,28 +5932,25 @@ var actions = {
   }
 };
 
-var card = function card(item) {
+var thumbView = function thumbView(item) {
   return (0, _hyperapp.h)("div", {
-    class: "col3"
-  }, (0, _hyperapp.h)("div", {
-    class: "card"
+    class: 'card ' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')
   }, (0, _hyperapp.h)("div", {
     class: "card-header"
-  }, (0, _hyperapp.h)("h1", {
+  }, (0, _hyperapp.h)("div", {
+    class: "country-image"
+  }, (0, _hyperapp.h)("img", {
+    src: "images/country/usa.png"
+  })), (0, _hyperapp.h)("div", {
     class: "card-title"
-  }, item.name), (0, _hyperapp.h)("h3", {
-    class: "card-meta"
-  }, "Software and hardware")), (0, _hyperapp.h)("div", {
-    class: "card-body"
-  }, (0, _hyperapp.h)("p", null, "Empower every person to achieve more.")), (0, _hyperapp.h)("div", {
-    class: "card-footer"
-  }, (0, _hyperapp.h)("a", {
-    href: "#",
-    class: "btn btn-primary"
-  }, "View More"))));
+  }, (0, _hyperapp.h)("div", {
+    class: "card-maintitle"
+  }, item.name), (0, _hyperapp.h)("div", {
+    class: "card-subtitle"
+  }, item.country_long))));
 };
 
-var bcard = function bcard(item) {
+var detailView = function detailView(item) {
   return (0, _hyperapp.h)("div", {
     class: "card"
   }, (0, _hyperapp.h)("div", {
@@ -6047,9 +6044,9 @@ var bcard = function bcard(item) {
 
 var view = function view(state, actions) {
   return (0, _hyperapp.h)("div", {
-    class: "row grid-layout"
+    class: "row grid-layout tiny four-column"
   }, state.plants.map(function (plant, i) {
-    return bcard(plant);
+    return thumbView(plant);
   }));
 };
 
@@ -6082,7 +6079,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50707" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56071" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

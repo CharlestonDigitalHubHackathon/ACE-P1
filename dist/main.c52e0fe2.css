@@ -787,8 +787,8 @@ label.checkbox input.form-checkbox {
   position: relative;
 }
 [class*="col"]{
-   float:left;
-/*    display:inline-block; */
+   /* float:left; */
+   /*    display:inline-block; */
 }
 [class*="col"]:last-child,[class*="col"].last {
   margin: 0;

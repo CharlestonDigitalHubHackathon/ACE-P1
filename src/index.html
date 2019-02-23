@@ -31,6 +31,16 @@ ul.filter-menu {
     list-style: none;
     margin-left: 1rem;
 }
+
+.main-page{
+    background:#fbfbfb;
+    height:100vh;
+    text-align:center;
+    margin: 0;
+}
+.main-page.four-column .col:nth-child(even){
+    background:#e6e6e645;
+}
 </style>
 
 <style type="text/css">
@@ -39,8 +49,10 @@ ul.filter-menu {
 
     }
     .grid-layout{
-            display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+    }
+    .four-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .card {
@@ -167,6 +179,24 @@ ul.filter-menu {
 
 
             <div id="content">
+                <div class="main-page grid-layout four-column">
+                    <div class="col">
+                        <div class="section-content"></div>
+                        <div class="section-title">Type Name 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="section-content"></div>
+                        <div class="section-title">Type Name 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="section-content"></div>
+                        <div class="section-title">Type Name 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="section-content"></div>
+                        <div class="section-title">Type Name 1</div>
+                    </div>
+                </div>
                 <div id="ace-app" class="">
 
                 </div>
