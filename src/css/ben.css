@@ -19,11 +19,12 @@ body {
 }
 
 .tiny-card {
-    margin: 2px;
+    margin: 3px;
     width: 60px;
     height: 60px;
     border: none;
     overflow: hidden;
+    display: inline-block;
 }
 
 .tiny-card div {
