@@ -2,14 +2,13 @@ import { h, app } from "hyperapp"
 import BadTypes from "../data/BadTypes"
 
 export default (item) => {
-    return (<div class={'card tiny-card ' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')}>
+    return (<div class={'card tiny-card ' + (BadTypes.indexOf(item.fuel1) == -1 ? 'content-good' : 'content-bad')}>
         <div class="card-header">
-            <div class="country-image">
-                <img src={'images/country/' + item.country_code + '.png'} />
+            <div>
+                <img src={'assets/country/' + item.country_2 + '.png'} />
             </div>
-            <div class="card-title">
+            <div>
                 <div class="card-maintitle">{item.name}</div>
-                <div class="card-subtitle">{item.country_long}</div>
             </div>
         </div>
     </div>
