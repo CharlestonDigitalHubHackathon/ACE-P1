@@ -1,6 +1,7 @@
 import { h, app } from "hyperapp"
 import Regions from "../data/Regions"
 import thumbView from "./thumbView";
+import detailView from "./detailView";
 
 const smset = Regions.slice(0, 4);
 export default (columndata) => {

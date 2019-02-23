@@ -1,9 +1,12 @@
+import { h, app } from "hyperapp"
+import BadTypes from "../data/BadTypes"
+
 export default (item) => {
     return (
         <div class="card">
             <div class="card-header">
                 <div class="country-image">
-                    <img src="images/country/usa.png" />
+                    <img src={'assets/country/' + item.country_2 + '.png'} />
                 </div>
                 <div class="card-title">
                     <div class="card-maintitle">{item.name}</div>
