@@ -22,6 +22,17 @@ body {
     margin: 2px;
     width: 60px;
     height: 60px;
+    border: none;
+    overflow: hidden;
+}
+
+.tiny-card div {
+    display: block;
+}
+
+.tiny-card img {
+    width: 40px;
+    height: 30px;
 }
 
 /*
