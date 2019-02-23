@@ -14,9 +14,9 @@ export default (item) => {
                 </div>
             </div>
             <div class={'card-content content-' + (BadTypes.indexOf(item.fuel1) == -1 ? 'good' : 'bad')}>
-                <div class="card-year">2016</div>
+                <div class="card-year">{item.commissioning_year}</div>
                 <div class="card-icon">
-                    <img src={'images/type/' + item.fuel1 + '.png'} />
+                    <img src={'assets/type/' + item.fuel1 + '.png'} />
                 </div>
             </div>
             <div class="card-footer">
