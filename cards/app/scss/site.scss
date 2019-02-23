@@ -1,0 +1,14 @@
+// THEME
+@import "variables.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "overrides.scss";
+
+// SITE STYLES
+
+// Components
+//@import "card-component.scss";
+
+// Global Styles
+h1 {
+    color: $brand-primary;
+}
