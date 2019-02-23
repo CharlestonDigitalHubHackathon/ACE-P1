@@ -2,6 +2,16 @@ body {
     font-family: 'Open Sans', Helvetica, sans-serif;
 
 }
+
+#header .right {
+ float: right;
+}
+#header .btn {
+    display: inline-block;
+    margin: 4px;
+}
+
+
 .grid-layout{
     display: grid;
 }
