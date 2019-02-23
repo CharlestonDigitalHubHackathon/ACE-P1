@@ -36,9 +36,9 @@ const actions = {
     down: () => state => ({ count: state.count - 1 }),
     up: () => state => ({ count: state.count + 1 })
 }
+var filterPlants = parseArray(Plants, 'Region');
 
-
-const view = (state, actions) => mainView(Plants);
+const view = (state, actions) => mainView(filterPlants);
 
 // const view = (state, actions) => (
 //     <div class="row grid-layout tiny four-column">

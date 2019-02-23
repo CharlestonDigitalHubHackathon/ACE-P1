@@ -9,7 +9,7 @@ export default (columndata) => {
         {smset.map((region, i) => {
             return (
                 <div class="col">
-                    <div class="section-content">{columndata.map((plant)=>thumbView(plant))}</div>
+                    <div class="section-content">{columndata[region].map((plant)=>thumbView(plant))}</div>
                     <div class="section-title">{region}</div>
                 </div>
             )
