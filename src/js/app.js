@@ -2,6 +2,7 @@ import { h, app } from "hyperapp"
 import BadTypes from "./data/BadTypes"
 
 import thumbView from "./views/thumbView"
+import mainView from "./views/mainView"
 
 var Plants = require("./data/plant.json");
 
@@ -37,12 +38,14 @@ const actions = {
 }
 
 
-const view = (state, actions) => (
-    <div class="row grid-layout tiny four-column">
-        {state.plants.map((plant, i) => thumbView(plant) )}
-    </div>
-)
-window.Plants = Plants;
-window.parseArray = parseArray;
+const view = (state, actions) => mainView();
+
+// const view = (state, actions) => (
+//     <div class="row grid-layout tiny four-column">
+//       {mainView()}
+//     </div>
+// )
+// window.Plants = Plants;
+// window.parseArray = parseArray;
 
 app(state, actions, view, document.querySelector("#ace-app"));
