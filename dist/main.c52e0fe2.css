@@ -284,6 +284,8 @@ appearance: none;
   padding: 0;
   text-align: left;
   /*z-index: 0;*/
+  max-width: 250px;
+  min-height: 250px;
   position: relative;
   box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
   /*  -webkit-transform: scale(1);
@@ -1005,6 +1007,7 @@ label.checkbox input.form-checkbox {
 }
 .grid3 .col3,.col3 {
   width: 22.75%;
+  /* max-width: 250px; */
 }
 .grid3 .col4,.col4 {
   width: 31.33%;
